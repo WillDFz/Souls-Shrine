@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul's Shrine</title>
+
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="backgrounds.css">
+</head>
+
+<body onload="criaVetorImagens();randomBackground();atualizaQuotes();" class="flex-wrap">
+    <!--Quotes inicio-->
+    <div class="quotes">
+        <p class="quote header-text"></p>
+    </div>
+    <!--Quotes fim-->
+    <!--Player inicio-->
+    <div id="playerContainer">
+        <!--HP-->
+        <div id="hpContainer">
+            <div id="hp"></div>
+        </div>
+
+
+        <div id="player">
+
+            <div id="artworkContainer">
+                <img id="artwork" src="http://cyberesistance.xyz/media/cover/artwork.png" alt="">
+            </div>
+            <div class="song-detail">
+                <div class="song_artist cc_streaminfo artist-name inner-text" data-type="trackartist" data-username="wferreir"></div>
+                <div class="song_info cc_streaminfo song-name inner-text" data-type="tracktitle" data-username="wferreir">Loading...</div>
+
+            </div>
+            <button type="button" id="play-button" class="btn standard-btn">
+                <div class="play-btn-image"></div>
+            </button>
+            <div class="button-list">
+                <button id="inventoryButton" class="btn standard-btn">
+                    <div class="inventory-btn-image"></div>
+                </button>
+                <button id="tracksButton" class="btn standard-btn ">
+                    <div class="tracks-btn-image"></div>
+                </button>
+                <button id="aboutButton" class="btn standard-btn ">
+                    <div class="about-btn-image"></div>
+                </button>
+            </div>
+
+        </div>
+        <!--Mana-->
+        <div id="manaContainer">
+            <div id="mana"></div>
+        </div>
+    </div>
+    <!--Player fim-->
+
+    <!--Inventory-->
+
+    <div id="inventoryContainer" class="radioContainer">
+        <div class="close-inventory-btn"></div>
+        <div id="inventory" class="window-template">
+            <div class="header">
+                <div id="inventoryGlass"></div>
+            </div>
+            <div class="line"></div>
+            <div class="inventoryContent">
+                <div class="gif-1 inventory-slot"></div>
+                <div class="gif-2 inventory-slot"></div>
+                <div class="gif-3 inventory-slot"></div>
+                <div class="gif-4 inventory-slot"></div>
+                <div class="gif-5 inventory-slot"></div>
+                <div class="gif-6 inventory-slot"></div>
+                <div class="gif-7 inventory-slot"></div>
+                <div class="gif-8 inventory-slot"></div>
+                <div class="gif-9 inventory-slot"></div>
+                <div class="gif-10 inventory-slot"></div>
+                <div class="gif-11 inventory-slot"></div>
+                <div class="gif-12 inventory-slot"></div>
+                <div class="gif-13 inventory-slot"></div>
+                <div class="gif-14 inventory-slot"></div>
+                <div class="gif-15 inventory-slot"></div>
+            </div>
+            <div id="botaoRandom" class="button-text">Random</div>
+        </div>
+    </div>
+    <!--Recent tracks-->
+
+    <div id="tracksContainer" class="radioContainer">
+        <div class="close-tracks-btn"></div>
+        <div id="recentTracks" class="window-template">
+            <div class="header">
+                <div id="recentTracksGlass"></div>
+            </div>
+            <div class="line"></div>
+
+            <div class="recentTracksContent">
+                <div class="cc_recenttracks_list inner-text" data-username="wferreir">Loading ...</div>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+
+    <div id="aboutContainer" class="radioContainer">
+        <div class="close-about-btn"></div>
+        <div id="about" class="window-template">
+            <div class="header">
+                <div id="aboutGlass"></div>
+            </div>
+            <div class="line"></div>
+
+            <div class="aboutContent">
+                <p class="lead-text">Welcome to Soul's Shrine!</p>
+                <p class="inner-text">Soul's Shrine is a free action themed radio station.</p>
+                <p class="inner-text">Join our community <a target="_blank" href="">Discord
+				channel.</a></p>
+                <p class="lead-text">Our broadcast includes</p>
+                <p class="inner-text"></p>
+                <p class="lead-text">Soul's Shrine Mobile?</p>
+                <p class="inner-text">We have the official Android application. Please, note that's not a final version, so the app may have some bugs and unreleased features.</br><a target="_blank" href="" download>Latest .apk here</a></p>
+                <p class="lead-text">Contact Information</p>
+                <p class="inner-text">mail@soulsshrine.xyz</p>
+                <p class="inner-text">Twitter: <a target="_blank" href="">@SoulsShrine</a>
+                </p>
+
+                <p class="lead-text">For Artists</p>
+                <p class="inner-text">If you would like (or would not like) to hear your songs, or see your artwork/image on Soul's Shrine, please contact us, and we will gladly add/remove songs/images from the broadcast.</p>
+                <p class="lead-text">Streaming Links</p>
+                <a class="stream-link-btn" href="">SoulsShrine.pls</a>
+                <a class="stream-link-btn" href="">SoulsShrine.asx</a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ShoutCast Scripts -->
+    <script language="javascript" type="text/javascript" src="https://procyon.shoutca.st/system/streaminfo.js"></script>
+    <script language="javascript" type="text/javascript" src="https://procyon.shoutca.st/system/recenttracks.js">
+    </script>
+
+    <script src="scripts/background.js"></script>
+    <script src="quotes.js"></script>
+    <script src="scripts/drag.js"></script>
+    <script src="scripts/commands.js"></script>
+</body>
+
+</html>
