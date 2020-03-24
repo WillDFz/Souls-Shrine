@@ -1,4 +1,4 @@
-const numeroDeBackgrounds = 15;
+const numeroDeBackgrounds = 20;
 let backgroundSlots = [];
 var backgroundImages = [];
 var a = 5;
@@ -52,6 +52,11 @@ let slot12 = document.querySelector(".gif-12");
 let slot13 = document.querySelector(".gif-13");
 let slot14 = document.querySelector(".gif-14");
 let slot15 = document.querySelector(".gif-15");
+let slot16 = document.querySelector(".gif-16");
+let slot17 = document.querySelector(".gif-17");
+let slot18 = document.querySelector(".gif-18");
+let slot19 = document.querySelector(".gif-19");
+let slot20 = document.querySelector(".gif-20");
 // Events
 slot1.addEventListener("click", slot1Click);
 slot2.addEventListener("click", slot2Click);
@@ -68,6 +73,11 @@ slot12.addEventListener("click", slot12Click);
 slot13.addEventListener("click", slot13Click);
 slot14.addEventListener("click", slot14Click);
 slot15.addEventListener("click", slot15Click);
+slot16.addEventListener("click", slot16Click);
+slot17.addEventListener("click", slot17Click);
+slot18.addEventListener("click", slot18Click);
+slot19.addEventListener("click", slot19Click);
+slot20.addEventListener("click", slot20Click);
 
 
 function slot1Click() {
@@ -128,4 +138,24 @@ function slot14Click() {
 
 function slot15Click() {
     if (document.body) { document.body.background = backgroundImages[15]; }
+}
+
+function slot16Click() {
+    if (document.body) { document.body.background = backgroundImages[16]; }
+}
+
+function slot17Click() {
+    if (document.body) { document.body.background = backgroundImages[17]; }
+}
+
+function slot18Click() {
+    if (document.body) { document.body.background = backgroundImages[18]; }
+}
+
+function slot19Click() {
+    if (document.body) { document.body.background = backgroundImages[19]; }
+}
+
+function slot20Click() {
+    if (document.body) { document.body.background = backgroundImages[20]; }
 }

@@ -24,6 +24,13 @@ const aboutContainer = document.getElementById('aboutContainer');
 // Botao fechar Recent Tracks
 const closeAboutButton = document.querySelector('.close-about-btn');
 
+//////////// Portal ///////////
+// Botao abrir Portal
+const openPortalButton = document.getElementById('openPortalButton');
+// Portal Container
+const portal = document.getElementById('portalButton');
+
+
 
 
 // Events
@@ -36,6 +43,9 @@ closeTracksButton.addEventListener("click", closeRecentTracks);
 ///// Recent Tracks ////
 aboutButton.addEventListener("click", openAbout);
 closeAboutButton.addEventListener("click", closeAbout);
+
+///// Portal ////
+openPortalButton.addEventListener("click", openPortal);
 
 
 // Funcoes
@@ -61,6 +71,15 @@ function openAbout() {
 
 function closeAbout() {
     aboutContainer.style.display = "none";
+}
+
+function openPortal() {
+    if (portal.style.display == "none") {
+        portal.style.display = "block";
+    } else {
+        portal.style.display = "none";
+    }
+
 }
 
 /*document.getElementById('minimize_btn').addEventListener("click", minimize);

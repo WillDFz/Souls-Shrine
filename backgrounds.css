@@ -102,3 +102,38 @@
     background-repeat: repeat;
     background-size: cover;
 }
+
+.gif-16 {
+    background-image: url(media/backgrounds/16.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gif-17 {
+    background-image: url(media/backgrounds/17.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gif-18 {
+    background-image: url(media/backgrounds/18.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gif-19 {
+    background-image: url(media/backgrounds/19.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gif-20 {
+    background-image: url(media/backgrounds/20.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}

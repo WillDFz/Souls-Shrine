@@ -14,18 +14,20 @@
 
 body,
 html {
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #4b0018;
     background-attachment: fixed;
     background-position: center center;
+    cursor: url(media/cursorPointer.png), auto !important;
 }
 
 body {
-    cursor: url(media/cursorPointer.png), auto;
+    cursor: url(media/cursorPointer.png), auto !important;
 }
 
 a {
@@ -34,7 +36,7 @@ a {
 
 .win-flex {
     flex: 1;
-    padding: 1% 2%
+    padding: 1% 2%;
 }
 
 .flex-wrap {
@@ -44,7 +46,7 @@ a {
     -webkit-box-align: center;
     align-items: center;
     justify-content: space-around;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 
@@ -70,27 +72,6 @@ a {
     -webkit-animation: scroll 45s infinite linear;
 }
 
-.border-1 {
-    margin: 2px;
-    height: 95%;
-    border: 2px dotted #777777;
-    border-radius: 15px 15px 0 0;
-}
-
-.border-2 {
-    margin: 2px;
-    height: 95%;
-    border: 2px dotted #777777;
-    border-radius: 15px 15px 0 0;
-}
-
-.border-3 {
-    margin: 2px;
-    height: 95%;
-    border: 2px double #5f290a;
-    border-radius: 15px 15px 0 0;
-}
-
 #playerContainer {
     width: 100%;
     height: 30%;
@@ -104,52 +85,74 @@ a {
     width: 70%;
     height: 100%;
     background-image: url(media/player/playerBackground.png);
-    border: 3px double #5f290a;
+    border: 1px solid #5f290a;
     border-radius: 15px 15px 0 0;
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
+    z-index: -3;
 }
 
 #hpContainer {
     width: 15%;
     height: 85%;
     box-sizing: border-box;
-    border: 3px solid #800000;
     border-radius: 25px 25px 0 0;
     box-shadow: 0 0 50px -10px #ff0000;
+    z-index: 1;
 }
 
 #manaContainer {
     width: 15%;
     height: 85%;
     box-sizing: border-box;
-    border: 3px solid #00209D;
     border-radius: 25px 25px 0 0;
     box-shadow: 0 0 50px -10px #0000ff;
+    z-index: 1;
 }
 
 #hp {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     background-image: url(media/hp.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    box-sizing: border-box;
     border-radius: 25px 25px 0 0;
 }
 
 #mana {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     background-image: url(media/mana.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    box-sizing: border-box;
     border-radius: 25px 25px 0 0;
+}
+
+.adorno1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background-image: url(media/adorno1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.adorno2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(media/adorno2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
 #artworkContainer {
@@ -174,7 +177,7 @@ a {
     height: 20%;
     position: relative;
     display: inline-block;
-    margin: 5% 0 15px 6px;
+    margin: 1em 0 15px 10px;
 }
 
 .artist-name {
@@ -206,7 +209,6 @@ a {
     flex-direction: row;
     float: left;
     right: 1%;
-    /*top: 15%;*/
     margin: 5px 0 5px 1em;
 }
 
@@ -221,7 +223,6 @@ a {
     width: 95%;
     height: 85%;
     display: none;
-    /*border: 2px solid green;*/
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -247,20 +248,18 @@ a {
     position: relative;
     width: 90%;
     height: 100%;
-    /*background-image: radial-gradient(#533A28, #110C08);*/
     margin: 0 auto;
     box-sizing: border-box;
     border-radius: 100px 100px 5px 5px;
-    /*border: 1px solid #727272;*/
-    box-shadow: 0 0px 3px 1px #78614d;
+    box-shadow: 0 0 5px 3px #78614d;
 }
 
 #inventoryGlass {
     position: relative;
     margin: auto;
     width: 100px;
-    height: 85px;
-    opacity: 0.6;
+    height: 95px;
+    opacity: 0.8;
     background-image: url(media/glassInventory.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -269,7 +268,7 @@ a {
 
 .inventoryContent {
     width: 95%;
-    height: 70%;
+    height: 65%;
     position: relative;
     background-image: url(media/inventoryContentBackground.png);
     background-position: center;
@@ -302,10 +301,7 @@ a {
     height: 5%;
     text-align: center;
     margin: auto;
-    top: 20px;
-    /*background-color: #800000;
-    border-radius: 5px;
-    border: 1px solid #f00;*/
+    top: 25px;
     padding: 6px;
     background-image: url(media/botaoTemplate.png);
     background-position: center;
@@ -322,7 +318,6 @@ a {
     width: 95%;
     height: 85%;
     display: none;
-    /*border: 2px solid green;*/
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -347,13 +342,11 @@ a {
 #recentTracks {
     position: relative;
     width: 90%;
-    height: 75%;
-    /*background-image: radial-gradient(#533A28, #110C08);*/
+    height: 65%;
     margin: 0 auto;
     box-sizing: border-box;
     border-radius: 100px 100px 5px 5px;
-    /*border: 1px solid #727272;*/
-    box-shadow: 0 0px 3px 1px #78614d;
+    box-shadow: 0 0px 5px 3px #78614d;
 }
 
 #recentTracksGlass {
@@ -361,7 +354,7 @@ a {
     margin: auto;
     width: 100px;
     height: 85px;
-    opacity: 0.6;
+    opacity: 0.8;
     background-image: url(media/glassRecentTracks.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -395,7 +388,6 @@ a {
     width: 95%;
     height: 85%;
     display: none;
-    /*border: 2px solid green;*/
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -421,20 +413,18 @@ a {
     position: relative;
     width: 90%;
     height: 100%;
-    /*background-image: radial-gradient(#533A28, #110C08);*/
     margin: 0 auto;
     box-sizing: border-box;
     border-radius: 100px 100px 5px 5px;
-    /*border: 1px solid #727272;*/
-    box-shadow: 0 0px 3px 1px #78614d;
+    box-shadow: 0 0px 5px 3px #78614d;
 }
 
 #aboutGlass {
     position: relative;
     margin: auto;
     width: 100px;
-    height: 85px;
-    opacity: 0.6;
+    height: 95px;
+    opacity: 0.8;
     background-image: url(media/glassAbout.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -443,7 +433,7 @@ a {
 
 .aboutContent {
     width: 95%;
-    height: 80%;
+    height: 75%;
     position: relative;
     background-image: url(media/windowDarkBackgroundTemplate.png);
     background-position: center;
@@ -483,6 +473,7 @@ a {
 #play-button {
     width: 50px;
     height: 50px;
+    margin-left: 18px;
 }
 
 .play-btn-image {
@@ -509,18 +500,32 @@ a {
     height: 95%;
 }
 
+#gameButton {
+    width: 50px;
+    height: 50px;
+}
+
+.game-btn-image {
+    background-image: url(media/player/swords.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 95%;
+    height: 95%;
+}
+
 #tracksButton {
     width: 50px;
     height: 50px;
 }
 
 .tracks-btn-image {
+    width: 95%;
+    height: 95%;
     background-image: url(media/player/tracks.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    width: 95%;
-    height: 95%;
 }
 
 #aboutButton {
@@ -529,12 +534,48 @@ a {
 }
 
 .about-btn-image {
+    width: 95%;
+    height: 95%;
     background-image: url(media/player/about.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+
+#openPortalButton {
+    width: 50px;
+    height: 50px;
+    background-image: radial-gradient(#110c08, #3a3d40);
+    border: none;
+    box-shadow: 0px 0px 6px 3px #ff000088;
+}
+
+#openPortalButton:hover {
+    box-shadow: 0px 0px 6px 3px #ff0000;
+}
+
+.open-portal-btn-image {
     width: 95%;
     height: 95%;
+    background-image: url(media/player/portal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#portalButton {
+    display: none;
+    width: 85px;
+    height: 185px;
+    background-image: url(media/portal.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 
@@ -550,7 +591,6 @@ a {
 .header {
     width: 100%;
     height: 15%;
-    /*background-image: radial-gradient(#733111, #3A1909);*/
     background-color: transparent;
     position: relative;
     box-sizing: border-box;
@@ -581,7 +621,7 @@ a {
     color: #f00;
     padding: 1px;
     line-height: 130%;
-    margin: 5px
+    margin: 5px;
 }
 
 .button-text {
@@ -590,6 +630,7 @@ a {
     color: #9e9e9e;
     padding: 1px;
     line-height: 130%;
+    cursor: url(media/cursorPointer.png), auto;
 }
 
 .standard-btn {
@@ -597,8 +638,13 @@ a {
     padding: 3px;
     border-radius: 5px;
     background-image: radial-gradient(#733111, #3A1909);
-    border: 1px solid #DB5F17;
+    border: 1px solid #f00;
     margin: 5px;
+    cursor: url(media/cursorPointer.png), auto !important;
+}
+
+.standard-btn:hover {
+    box-shadow: 0px 0px 6px 3px #ff0000;
 }
 
 .close-btn {
@@ -607,34 +653,79 @@ a {
     position: relative;
     border: 1px solid #DB5F17;
     border-radius: 5px;
+    cursor: url(media/cursorPointer.png), auto;
 }
 
 .line {
-    margin-top: 2.5px;
+    background-image: url(media/adornoHeader.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
     margin-bottom: 2.5px;
     width: 100%;
-    height: 5px;
-    background-image: radial-gradient(#7A7A7A, #3D3D3D);
-    border-radius: 50px;
+    height: 6%;
 }
 
 
 /* Media Queries */
 
-@media (max-height:700px) {
-    /*#player {
-        height: 240px;
-    }*/
-}
-
-@media (min-width:400px) {
+@media (min-width: 400px) {
     #inventoryContainer {
         width: 380px;
         height: 595px;
     }
     #tracksContainer {
-        width: 375px;
-        height: 590px;
+        width: 380px;
+        height: 595px;
+    }
+}
+
+@media(min-width: 500px) {
+    #aboutContainer {
+        width: 380px;
+        height: 595px;
+    }
+}
+
+@media(min-width: 768px) {
+    #hpContainer,
+    #hp {
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+    }
+    #manaContainer,
+    #mana {
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+    }
+    .adorno1,
+    .adorno2 {
+        width: 90%;
+    }
+}
+
+@media(min-width:990px) {
+    #playerContainer {
+        height: 185px;
+        position: fixed;
+        bottom: 0;
+    }
+    #artworkContainer {
+        width: 145px;
+        height: 145px;
+    }
+    .button-list {
+        width: 50%;
+        right: 0;
+        margin: 20px 0 0px 15px;
+    }
+}
+
+@media(min-width: 1366px) {
+    #playerContainer {
+        width: 1200px;
     }
 }
 
