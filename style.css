@@ -399,7 +399,7 @@ a {
     border: 1px solid #DB5F17;
     border-radius: 5px;
     background-color: #3A1909;
-    background-image: url(media/close.png);
+    background-image: url(/media/close.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -651,7 +651,7 @@ a {
     width: 20px;
     height: 20px;
     position: relative;
-    border: 1px solid #DB5F17;
+    border: 1px solid #f00;
     border-radius: 5px;
     cursor: url(media/cursorPointer.png), auto;
 }
