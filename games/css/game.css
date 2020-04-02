@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Diablo';
+    src: url(/fonts/DiabloHeavy.ttf);
+}
+
+#game_over {
+    width: 250px;
+    height: 100px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 2px 1px 12px black;
+    font-family: Diablo;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    display: none;
+    z-index: 5;
+}
+
+#gameContainer {
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    display: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.close-game-btn {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: 1px solid #DB5F17;
+    border-radius: 5px;
+    background-color: #3A1909;
+    background-image: url(../../media/close.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #DB5F17;
+    text-align: center;
+    padding: -2.5px;
+    float: left;
+}
+
+#game {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 100px 100px 5px 5px;
+    box-shadow: 0 0 5px 3px #78614d;
+}
+
+#gameGlass {
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 95px;
+    opacity: 0.8;
+    /*background-image: url(media/glassInventory.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gameContent {
+    width: 95%;
+    height: 65%;
+    position: relative;
+    background-image: url(../../media/windowDarkBackgroundTemplate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    overflow-y: hidden;
+    box-shadow: 0 0px 3px 1px #78614d;
+}
+
+#playGameButton {
+    position: relative;
+    width: 80%;
+    height: 5%;
+    text-align: center;
+    margin: auto;
+    top: 25px;
+    padding: 6px;
+    background-image: url(../../media/botaoTemplate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0px 3px 1px #78614d;
+}
+
+#btn_again {
+    position: relative;
+    width: 80%;
+    height: 5%;
+    text-align: center;
+    margin: auto;
+    top: 25px;
+    padding: 6px;
+    background-image: url(../../media/botaoTemplate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0px 3px 1px #78614d;
+    display: none;
+}
+
+@media (min-width: 400px) {
+    #gameContainer {
+        width: 380px;
+        height: 655px;
+    }
+}

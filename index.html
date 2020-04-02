@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soul's Shrine</title>
-
+    <link rel="icon" href="media/icon.png">
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="backgrounds.css">
+    <link rel="stylesheet" type="text/css" href="games/css/game.css">
+
 </head>
 
 <body onload="criaVetorImagens();randomBackground();atualizaQuotes();" class="flex-wrap">
@@ -26,9 +28,15 @@
         <p class="quote header-text"></p>
     </div>
     <!--Quotes fim-->
+
     <!-- Portal inicio-->
-    <div id="portalButton"></div>
+
+    <a href="https://discord.gg/2xdpcHF">
+        <div id="portalButton"></div>
+    </a>
+
     <!-- Portal fim-->
+
     <!--Player inicio-->
     <div id="playerContainer" class="">
         <!--HP-->
@@ -165,6 +173,33 @@
     </div>
 
 
+    <!-- Jogo -->
+    <div id="gameContainer" class="radioContainer">
+        <div class="close-game-btn"></div>
+        <div id="game" class="window-template">
+            <div class="header">
+                <div id="gameGlass"></div>
+            </div>
+            <div class="line"></div>
+            <div class="gameContent">
+                <!---->
+
+                <canvas id="stage" width="300" height="400"></canvas>
+                <div id="game_over">Game Over</div>
+
+            </div>
+            <div onclick="toggleButton(this)" id="playGameButton" class="button-text">Play</div>
+            <div id="btn_again" class="button-text">Play Again</div>
+            <div> <span id="pontos_detail" class="inner-text">0</span></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
     <!-- ShoutCast Scripts -->
     <script language="javascript" type="text/javascript" src="https://procyon.shoutca.st/system/streaminfo.js"></script>
     <script language="javascript" type="text/javascript" src="https://procyon.shoutca.st/system/recenttracks.js">
@@ -174,6 +209,8 @@
     <script src="quotes.js"></script>
     <script src="scripts/drag.js"></script>
     <script src="scripts/commands.js"></script>
+    <script src="games/scripts/game.js"></script>
+
 </body>
 
 </html>
