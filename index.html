@@ -53,13 +53,22 @@
                 <img id="artwork" src="http://cyberesistance.xyz/media/cover/artwork.png" alt="">
             </div>
             <div class="song-detail">
-                <div class="song_artist cc_streaminfo artist-name inner-text" data-type="trackartist" data-username="wferreir"></div>
-                <div class="song_info cc_streaminfo song-name inner-text" data-type="tracktitle" data-username="wferreir">Loading...</div>
+                <div class="song_artist cc_streaminfo artist-name inner-text" data-type="trackartist" data-username="willdfz"></div>
+                <div class="song_info cc_streaminfo song-name inner-text" data-type="tracktitle" data-username="willdfz">Loading...</div>
 
             </div>
-            <button type="button" id="play-button" class="btn standard-btn">
+
+
+            <!--<button type="button" id="play-button" class="btn standard-btn">
                 <div class="play-btn-image"></div>
-            </button>
+            </button>-->
+
+            <button type="button" id="play-button" class="button-text" onclick="PlayAudio();toggleButton(this)">Play</button>
+
+
+
+
+
             <div class="button-list">
                 <button id="inventoryButton" class="btn standard-btn">
                     <div class="inventory-btn-image"></div>
@@ -133,7 +142,7 @@
             </div>
 
             <div class="recentTracksContent">
-                <div class="cc_recenttracks_list inner-text" data-username="wferreir">Loading ...</div>
+                <div class="cc_recenttracks_list inner-text" data-username="willdfz">Loading ...</div>
             </div>
         </div>
     </div>
@@ -201,14 +210,17 @@
 
 
     <!-- ShoutCast Scripts -->
-    <script language="javascript" type="text/javascript" src="https://procyon.shoutca.st/system/streaminfo.js"></script>
-    <script language="javascript" type="text/javascript" src="https://procyon.shoutca.st/system/recenttracks.js">
+    <script language="javascript" type="text/javascript" src="https://cassini.shoutca.st/system/streaminfo.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cassini.shoutca.st/system/recenttracks.js">
     </script>
 
     <script src="scripts/background.js"></script>
     <script src="quotes.js"></script>
     <script src="scripts/drag.js"></script>
     <script src="scripts/commands.js"></script>
+
+    <script src="scripts/stream.js"></script>
+
     <script src="games/scripts/game.js"></script>
 
 </body>

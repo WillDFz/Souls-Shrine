@@ -173,11 +173,11 @@ a {
 }
 
 .song-detail {
-    width: 35%;
+    width: 45%;
     height: 20%;
     position: relative;
     display: inline-block;
-    margin: 1em 0 15px 10px;
+    margin: 1em 0 15px 3px;
 }
 
 .artist-name {
@@ -471,9 +471,17 @@ a {
 /*  ////////////////////////////////////////////////       Buttons      ////////////////////////////////////////////*/
 
 #play-button {
-    width: 50px;
     height: 50px;
-    margin-left: 18px;
+    width: 120px;
+    margin-left: 150px;
+    display: block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    background-image: url(media/player/botaoPlayBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .play-btn-image {
