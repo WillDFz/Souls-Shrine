@@ -2,12 +2,24 @@ var stage = document.getElementById("stage");
 var ctx = stage.getContext("2d");
 var person = new Image();
 var bg = new Image();
+var sky = new Image();
+var forest = new Image();
+var spear = new Image();
+var mountain1 = new Image();
+var mountain2 = new Image();
+var trees = new Image();
+
+
 var fg = new Image();
 var pipeNorth = new Image();
 var pipeSouth = new Image();
 
 person.src = "../assets/dragon.png";
 bg.src = "../assets/background.png";
+
+
+
+
 fg.src = "../assets/floor.png";
 pipeNorth.src = "../assets/pipeNorth.png";
 pipeSouth.src = "../assets/pipeSouth.png";
@@ -84,6 +96,7 @@ function game_over() {
 
 function draw() {
     ctx.drawImage(bg, 0, 0);
+
     //console.log(pipe.length);
     //gerar barreiras 
     for (var i = 0; i < pipe.length; i++) {
@@ -112,7 +125,7 @@ function draw() {
 
         if (pipe[i].x == 5) {
             score++;
-            scor.play();
+            //scor.play();
         }
     }
     ctx.drawImage(fg, 0, stage.height - fg.height);
