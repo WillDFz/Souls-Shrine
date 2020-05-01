@@ -94,6 +94,52 @@ a {
     z-index: -3;
 }
 
+#volumeContaner {
+    width: 100%;
+    height: 20px;
+    /* background-color: #f00; */
+    position: relative;
+    margin: 0px auto 0px auto;
+    top: 18%;
+    text-align: center;
+}
+
+.volume-bar {
+    width: 10%;
+    height: 40%;
+    border-radius: 5px;
+    display: inline-block;
+    margin: auto;
+    border: 1px solid;
+    background-color: #997c2c;
+}
+
+#volumeUp {
+    display: inline-block;
+    font-size: 225%;
+    font-family: 'Diablo';
+    color: #f00;
+    line-height: 60%;
+    text-shadow: 0 0 5px #ff2469;
+    border-radius: 5px;
+    background-image: radial-gradient(#733111, #3A1909);
+    border: 1px solid #f00;
+    cursor: url(media/cursorPointer.png), auto !important;
+}
+
+#volumeDown {
+    display: inline-block;
+    font-size: 225%;
+    font-family: 'Diablo';
+    color: #f00;
+    line-height: 60%;
+    text-shadow: 0 0 5px #ff2469;
+    border-radius: 5px;
+    background-image: radial-gradient(#733111, #3A1909);
+    border: 1px solid #f00;
+    cursor: url(media/cursorPointer.png), auto !important;
+}
+
 #hpContainer {
     width: 15%;
     height: 85%;

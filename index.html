@@ -22,7 +22,7 @@
 
 </head>
 
-<body onload="criaVetorImagens();randomBackground();atualizaQuotes();" class="flex-wrap">
+<body onload="criaVetorImagens();randomBackground();atualizaQuotes();setInitialVolume();" class="flex-wrap">
     <!--Quotes inicio-->
     <div class="quotes">
         <p class="quote header-text"></p>
@@ -37,16 +37,29 @@
 
     <!-- Portal fim-->
 
+    <!--Volume Bar-->
+
+    <div id="volumeContaner">
+        <div id="volumeDown">-</div>
+        <div id="bar1" class="volume-bar"></div>
+        <div id="bar2" class="volume-bar"></div>
+        <div id="bar3" class="volume-bar"></div>
+        <div id="bar4" class="volume-bar"></div>
+        <div id="bar5" class="volume-bar"></div>
+        <div id="bar6" class="volume-bar"></div>
+        <div id="volumeUp">+</div>
+    </div>
+
     <!--Player inicio-->
     <div id="playerContainer" class="">
+
+
         <!--HP-->
         <div id="hpContainer" class="">
             <div id="hp">
                 <div class="adorno1"></div>
             </div>
         </div>
-
-
         <div id="player" class="">
 
             <div id="artworkContainer">
@@ -58,16 +71,7 @@
 
             </div>
 
-
-            <!--<button type="button" id="play-button" class="btn standard-btn">
-                <div class="play-btn-image"></div>
-            </button>-->
-
             <button type="button" id="play-button" class="button-text" onclick="PlayAudio();toggleButton(this)">Play</button>
-
-
-
-
 
             <div class="button-list">
                 <button id="inventoryButton" class="btn standard-btn">
