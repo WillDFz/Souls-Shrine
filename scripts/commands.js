@@ -99,6 +99,12 @@ function closeAbout() {
 function openPortal() {
     if (portal.style.display == "none") {
         portal.style.display = "block";
+
+        let portalAudio = new Audio();
+        portalAudio.src = "../media/sounds/portal.mp3";
+        portalAudio.play();
+
+
     } else {
         portal.style.display = "none";
     }
