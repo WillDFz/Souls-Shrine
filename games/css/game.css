@@ -153,6 +153,10 @@
     transform: translateY(2px);
 }
 
+#pontos_detail {
+    display: none;
+}
+
 @media (min-width: 400px) {
     #gameContainer {
         width: 380px;
