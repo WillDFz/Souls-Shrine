@@ -957,6 +957,15 @@ a {
     }
 }
 
+@media screen and (max-height: 700px) {
+    #playerContainer {
+        height: 35%;
+    }
+    #volumeContainer {
+        top: 12%;
+    }
+}
+
 
 /*////////////////////////////////////////////////////////////// SHoutcast alteracoes //////////////////////////////////////////////*/
 
