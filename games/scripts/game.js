@@ -2,13 +2,6 @@ var stage = document.getElementById("stage");
 var ctx = stage.getContext("2d");
 var person = new Image();
 var bg = new Image();
-var sky = new Image();
-var forest = new Image();
-var spear = new Image();
-var mountain1 = new Image();
-var mountain2 = new Image();
-var trees = new Image();
-
 
 var fg = new Image();
 var pipeNorth = new Image();
@@ -16,10 +9,6 @@ var pipeSouth = new Image();
 
 person.src = "../assets/dragon.png";
 bg.src = "../assets/background.png";
-
-
-
-
 fg.src = "../assets/floor.png";
 pipeNorth.src = "../assets/pipeNorth.png";
 pipeSouth.src = "../assets/pipeSouth.png";
@@ -34,10 +23,6 @@ var gravity = 1.25;
 var gravity_backup = gravity;
 var score = 0;
 
-var fly = new Audio();
-var scor = new Audio();
-fly.src = "../som/fly.mp3";
-scor.src = "../som/score.mp3";
 
 //barreiras
 var pipe = [];
@@ -66,7 +51,7 @@ btn_again.addEventListener("click", play_again);
 
 function moveUp() {
     gravity = -7;
-    //fly.play();
+
     setTimeout(function() {
         gravity = gravity_backup;
     }, 80);
@@ -105,7 +90,7 @@ function draw() {
         ctx.drawImage(pipeNorth, pipe[i].x, pipe[i].y);
         ctx.drawImage(pipeSouth, pipe[i].x, pipe[i].y + constant);
 
-        //fas a barreira ir para traz 288 512
+        //faz a barreira ir para traz 288 512
         pipe[i].x--;
         if (pipe[i].x == 135) {
             pipe.push({
@@ -125,7 +110,7 @@ function draw() {
 
         if (pipe[i].x == 5) {
             score++;
-            //scor.play();
+
         }
     }
     ctx.drawImage(fg, 0, stage.height - fg.height);
