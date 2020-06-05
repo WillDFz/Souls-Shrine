@@ -144,12 +144,42 @@
             <div class="header">
                 <div id="recentTracksGlass"></div>
             </div>
-
+            <div class="lineSmall"></div>
             <div class="recentTracksContent">
                 <div class="cc_recenttracks_list inner-text" data-username="willdfz">Loading ...</div>
             </div>
+            <div id="requestButton" class="button-text">Song Request</div>
+
         </div>
     </div>
+    <!-- Request Form   -->
+    <div id="requestContainer" class="radioContainer">
+        <div class="close-request-btn"></div>
+        <div id="request" class="window-template">
+            <div class="header">
+                <div id="requestGlass"></div>
+            </div>
+            <div class="lineSmall"></div>
+
+            <div class="requestContent">
+                <form class="cc_request_form" data-username="willdfz">
+                    <div data-type="result"></div>
+                    <h2 class="lead-text">Request a Song</h2>
+                    <input class="inputRadio inner-text" type="text" name="request[artist]" placeholder="Artist" />
+                    <input class="inputRadio inner-text" type="text" name="request[title]" placeholder="Music" />
+                    <input class="inputRadio inner-text" type="text" name="request[dedication]" placeholder="Dedicated to" />
+                    <input class="inputRadio inner-text" type="text" name="request[sender]" placeholder="Your name" />
+                    <input class="inputRadio inner-text " type="text" name="request[email]" placeholder="Your e-mail" />
+
+                    <input id="submitRequestButton" class="button-text" type="button" value="Submit" data-type="submit" />
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!--About-->
 
@@ -165,7 +195,7 @@
                 <p class="lead-text">Welcome to Soul's Shrine!</p>
                 <p class="inner-text">Soul's Shrine is a free action themed radio station.</p>
                 <p class="inner-text">Join our community <a href="https://discord.gg/2xdpcHF" target="_blank">Discord
-				channel.</a></p>
+                        channel.</a></p>
                 <!--<p class="lead-text">Our broadcast includes</p>-->
                 <p class="inner-text"></p>
                 <p class="lead-text">Soul's Shrine Mobile?</p>
@@ -217,6 +247,9 @@
     <script language="javascript" type="text/javascript" src="https://cassini.shoutca.st/system/streaminfo.js"></script>
     <script language="javascript" type="text/javascript" src="https://cassini.shoutca.st/system/recenttracks.js">
     </script>
+    <script language="javascript" type="text/javascript" src="https://cassini.shoutca.st:2199/system/request.js">
+    </script>
+
 
     <script src="scripts/background.js"></script>
     <script src="quotes.js"></script>

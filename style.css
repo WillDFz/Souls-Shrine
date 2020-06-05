@@ -85,6 +85,12 @@ a {
 
 /*         Elements      */
 
+.inputRadio {
+    width: 90%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
 .quotes {
     width: 100%;
     height: 5%;
@@ -447,7 +453,7 @@ a {
 #tracksContainer {
     position: absolute;
     width: 95%;
-    height: 85%;
+    height: 415px;
     display: none;
     margin: 0 auto;
     box-sizing: border-box;
@@ -470,18 +476,10 @@ a {
     float: left;
 }
 
-.close-tracks-btn:hover {
-    box-shadow: 0px 0px 6px 3px #ff0000;
-}
-
-.close-tracks-btn:active {
-    transform: translateY(2px);
-}
-
 #recentTracks {
     position: relative;
     width: 90%;
-    height: 65%;
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     border-radius: 100px 100px 5px 5px;
@@ -502,7 +500,7 @@ a {
 
 .recentTracksContent {
     width: 95%;
-    height: 70%;
+    height: 55%;
     position: relative;
     background-image: url(media/windowDarkBackgroundTemplate.png);
     background-position: center;
@@ -510,13 +508,153 @@ a {
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 10px;
     text-align: center;
     overflow-y: scroll;
     box-shadow: 0 0px 3px 1px #78614d;
+}
+
+
+/* Request */
+
+#requestContainer {
+    position: absolute;
+    width: 95%;
+    height: 465px;
+    display: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.close-request-btn {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    background-color: #3A1909;
+    background-image: url(media/close.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #DB5F17;
+    text-align: center;
+    padding: -2.5px;
+    float: left;
+}
+
+.close-request-btn:hover {
+    box-shadow: 0px 0px 6px 3px #ff0000;
+}
+
+.close-request-btn:active {
+    transform: translateY(2px);
+}
+
+#request {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 100px 100px 5px 5px;
+    box-shadow: 0 0px 5px 3px #78614d;
+}
+
+#requestGlass {
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 85px;
+    opacity: 0.8;
+    background-image: url(media/glassRequest.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.requestContent {
+    width: 95%;
+    height: 70%;
+    top: -5%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+#requestButton {
+    position: relative;
+    width: 80%;
+    height: 6%;
+    text-align: center;
+    margin: auto;
+    top: 15px;
+    padding: 3px;
+    background-image: url(media/botaoTemplate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0px 3px 1px #78614d;
+    opacity: 0.8;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10+ and Edge */
+    user-select: none;
+    /* Standard syntax */
+}
+
+#requestButton:hover {
+    box-shadow: 0 0px 10px 1px #78614d;
+    color: rgb(204, 204, 204);
+    opacity: 1;
+}
+
+#requestButton:active {
+    box-shadow: 0 0px 10px 1px #78614d;
+    color: rgb(204, 204, 204);
+    opacity: 1;
+    transform: translateY(2px);
+}
+
+#submitRequestButton {
+    position: relative;
+    width: 80%;
+    height: 6%;
+    text-align: center;
+    margin: auto;
+    top: 15px;
+    padding: 3px;
+    background-image: url(media/botaoTemplate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0px 3px 1px #78614d;
+    opacity: 0.8;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10+ and Edge */
+    user-select: none;
+    /* Standard syntax */
+}
+
+#submitRequestButton:hover {
+    box-shadow: 0 0px 10px 1px #78614d;
+    color: rgb(204, 204, 204);
+    opacity: 1;
+}
+
+#submitRequestButton:active {
+    box-shadow: 0 0px 10px 1px #78614d;
+    color: rgb(204, 204, 204);
+    opacity: 1;
+    transform: translateY(2px);
 }
 
 
@@ -856,6 +994,16 @@ a {
     height: 6%;
 }
 
+.lineSmall {
+    background-image: url(media/adornoHeader.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    /*margin-bottom: 1em;*/
+    width: 100%;
+    height: 65px;
+}
+
 
 /* Media Queries */
 
@@ -866,7 +1014,9 @@ a {
     }
     #tracksContainer {
         width: 380px;
-        height: 595px;
+    }
+    #requestContainer {
+        width: 380px;
     }
 }
 
@@ -956,6 +1106,8 @@ a {
         margin: 5px 0 5px 10px;
     }
 }
+
+@media screen and (min-height: 640px) {}
 
 @media screen and (max-height: 700px) {
     #playerContainer {

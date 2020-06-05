@@ -16,6 +16,18 @@ const tracksContainer = document.getElementById('tracksContainer');
 // Botao fechar Recent Tracks
 const closeTracksButton = document.querySelector('.close-tracks-btn');
 
+//////////// Request ///////////
+// Botao abrir Music Request
+const requestButton = document.getElementById('requestButton');
+// Recent Music Request Container
+const requestContainer = document.getElementById('requestContainer');
+// Botao fechar Music Request
+const closeRequestButton = document.querySelector('.close-request-btn');
+
+
+
+
+
 //////////// About ///////////
 // Botao abrir Recent Tracks
 const aboutButton = document.getElementById('aboutButton');
@@ -52,7 +64,13 @@ closeTracksButton.addEventListener("click", closeRecentTracks);
 aboutButton.addEventListener("click", openAbout);
 closeAboutButton.addEventListener("click", closeAbout);
 
-///// Recent Tracks /////
+///// Recent Tracks ////
+requestButton.addEventListener("click", openRequest);
+closeRequestButton.addEventListener("click", closeRequest);
+
+
+
+///// Game /////
 gameButton.addEventListener("click", openGame);
 closeGameButton.addEventListener("click", closeGame);
 
@@ -87,6 +105,17 @@ function openRecentTracks() {
 function closeRecentTracks() {
     tracksContainer.style.display = "none";
 }
+
+function openRequest() {
+    requestContainer.style.display = "block";
+}
+
+function closeRequest() {
+    requestContainer.style.display = "none";
+}
+
+
+
 
 function openAbout() {
     aboutContainer.style.display = "block";
