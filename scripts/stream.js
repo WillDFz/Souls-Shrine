@@ -28,7 +28,7 @@ function setInitialVolume() {
     myaudio.volume = cont * 0.1;
     for (let i = 1; i <= 3; i++) {
         let barra = document.getElementById(`bar${i}`);
-        barra.style.backgroundColor = "#e3b73d"
+        barra.style.backgroundColor = "#f3db1f"
     }
 }
 
@@ -40,7 +40,7 @@ function upVolume() {
     let acm = cont + 1;
     if (acm <= 6) {
         let barra = document.getElementById(`bar${acm}`);
-        barra.style.backgroundColor = "#e3b73d";
+        barra.style.backgroundColor = "#f3db1f";
         cont += 1;
         setVolume();
     }
@@ -50,7 +50,7 @@ function lowVolume() {
     let acm = cont;
     if (cont >= 1) {
         let barra = document.getElementById(`bar${acm}`);
-        barra.style.backgroundColor = "#997c2c";
+        barra.style.backgroundColor = "#8c7d07";
         cont -= 1;
         setVolume();
     }
