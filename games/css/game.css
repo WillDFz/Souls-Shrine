@@ -90,7 +90,7 @@
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    overflow-y: hidden;
+    overflow: hidden;
     box-shadow: 0 0px 3px 1px #78614d;
 }
 
@@ -100,7 +100,7 @@
     height: 5%;
     text-align: center;
     margin: auto;
-    top: 25px;
+    top: 20px;
     padding: 6px;
     background-image: url(../../media/botaoTemplate.png);
     background-position: center;
