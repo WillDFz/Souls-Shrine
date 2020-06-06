@@ -137,3 +137,24 @@
     background-repeat: repeat;
     background-size: cover;
 }
+
+.gif-21 {
+    background-image: url(media/backgrounds/21.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gif-22 {
+    background-image: url(media/backgrounds/22.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gif-23 {
+    background-image: url(media/backgrounds/23.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
