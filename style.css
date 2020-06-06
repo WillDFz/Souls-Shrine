@@ -168,12 +168,13 @@ a {
 }
 
 #volumeUp {
+    padding: 1px;
+    text-align: center;
     display: inline-block;
     font-size: 225%;
     font-family: 'Diablo';
     color: #bc1300;
     line-height: 60%;
-    text-shadow: 0 0 5px #f00;
     border-radius: 5px;
     background-image: radial-gradient(#733111, #3c281d);
     border: 1px solid #bc1300;
@@ -192,12 +193,13 @@ a {
 }
 
 #volumeDown {
+    padding: 1px;
+    text-align: center;
     display: inline-block;
     font-size: 225%;
     font-family: 'Diablo';
     color: #bc1300;
     line-height: 60%;
-    text-shadow: 0 0 5px #f00;
     border-radius: 5px;
     background-image: radial-gradient(#733111, #3c281d);
     border: 1px solid #bc1300;
@@ -293,26 +295,25 @@ a {
     height: 20%;
     position: relative;
     display: inline-block;
-    margin: 1em 0 15px 3px;
+    margin: 1em 0 15px 10px;
 }
 
 .artist-name {
+    color: #fff;
+    font-family: 'Diablo';
     font-size: 100%;
     font-weight: 700;
-    text-shadow: 0 0 5px #f00;
-    margin: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
 }
 
 .song-name {
-    width: 85%;
+    color: #fff;
+    font-family: 'Diablo';
     position: relative;
     font-size: 95%;
     font-weight: 400;
-    text-shadow: 0 0 5px #f00;
-    margin: 5px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis
@@ -1100,7 +1101,7 @@ a {
 
 @media screen and (max-width: 400px) {
     .song-detail {
-        width: 42%;
+        width: 40%;
     }
     #play-button {
         width: 95px;
