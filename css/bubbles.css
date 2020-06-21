@@ -1,0 +1,20 @@
+.labSVG{
+  width:100%;
+  height:100%;
+  position: absolute;
+  /* max-height:600px; */
+  margin: 1px solid black;
+}
+
+.flask{
+  stroke:#f7f7f7;
+}
+.liquidBackHP{
+  fill:#B30000;
+
+}
+
+.liquidBackMP{
+  fill:#0000ff;
+
+}

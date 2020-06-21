@@ -233,10 +233,7 @@ a {
 #hp {
     width: 100%;
     height: 100%;
-    background-image: url(media/hp.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    position: relative;
     box-sizing: border-box;
     border-radius: 25px 25px 0 0;
 }
@@ -244,34 +241,11 @@ a {
 #mana {
     width: 100%;
     height: 100%;
-    background-image: url(media/mana.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    position: relative;
     box-sizing: border-box;
     border-radius: 25px 25px 0 0;
 }
 
-.adorno1 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin: auto;
-    background-image: url(media/adorno1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-}
-
-.adorno2 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-image: url(media/adorno2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-}
 
 #artworkContainer {
     width: 125px;
@@ -575,7 +549,7 @@ a {
     position: relative;
     margin: auto;
     width: 100px;
-    height: 85px;
+    height: 75px;
     opacity: 0.8;
     background-image: url(media/glassRequest.png);
     background-position: center;
@@ -1161,3 +1135,4 @@ a {
 .cctrack a.ccbuy:hover {
     display: none !important;
 }
+
