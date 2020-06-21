@@ -1,4 +1,4 @@
-const numeroDeBackgrounds = 23;
+const numeroDeBackgrounds = 20;
 let backgroundSlots = [];
 var backgroundImages = [];
 var a = 5;
@@ -57,9 +57,7 @@ let slot17 = document.querySelector(".gif-17");
 let slot18 = document.querySelector(".gif-18");
 let slot19 = document.querySelector(".gif-19");
 let slot20 = document.querySelector(".gif-20");
-let slot21 = document.querySelector(".gif-21");
-let slot22 = document.querySelector(".gif-22");
-let slot23 = document.querySelector(".gif-23");
+
 
 // Events
 slot1.addEventListener("click", slot1Click);
@@ -82,9 +80,7 @@ slot17.addEventListener("click", slot17Click);
 slot18.addEventListener("click", slot18Click);
 slot19.addEventListener("click", slot19Click);
 slot20.addEventListener("click", slot20Click);
-slot21.addEventListener("click", slot21Click);
-slot22.addEventListener("click", slot22Click);
-slot23.addEventListener("click", slot23Click);
+
 
 
 function slot1Click() {
@@ -165,16 +161,4 @@ function slot19Click() {
 
 function slot20Click() {
     if (document.body) { document.body.background = backgroundImages[20]; }
-}
-
-function slot21Click() {
-    if (document.body) { document.body.background = backgroundImages[21]; }
-}
-
-function slot22Click() {
-    if (document.body) { document.body.background = backgroundImages[22]; }
-}
-
-function slot23Click() {
-    if (document.body) { document.body.background = backgroundImages[23]; }
 }
