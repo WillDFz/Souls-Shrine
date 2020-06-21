@@ -7,14 +7,16 @@ var fg = new Image();
 var pipeNorth = new Image();
 var pipeSouth = new Image();
 
-person.src = "../assets/dragon.png";
-bg.src = "../assets/background.png";
-fg.src = "../assets/floor.png";
-pipeNorth.src = "../assets/pipeNorth.png";
-pipeSouth.src = "../assets/pipeSouth.png";
+
+
+person.src = "games/assets/dragon.png";
+bg.src = "games/assets/background.png";
+fg.src = "games/assets/floor.png";
+pipeNorth.src = "games/assets/pipeNorth.png";
+pipeSouth.src = "games/assets/pipeSouth.png";
+
 
 var continua = true;
-
 var gap = 125;
 var content;
 var bx = 10;
@@ -90,7 +92,7 @@ function draw() {
         ctx.drawImage(pipeNorth, pipe[i].x, pipe[i].y);
         ctx.drawImage(pipeSouth, pipe[i].x, pipe[i].y + constant);
 
-        //faz a barreira ir para traz 288 512
+        //faz a barreira ir para tras 288 512
         pipe[i].x--;
         if (pipe[i].x == 135) {
             pipe.push({
