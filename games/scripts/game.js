@@ -33,9 +33,10 @@ pipe[0] = {
         x: stage.width,
         y: 0
     }
-    //pulo
+// Pulo Desktop
 document.addEventListener("keydown", moveUp);
-
+// Pulo Touch
+document.addEventListener("touchstart", moveUp);
 
 // Jogar
 playGameButton = document.getElementById("playGameButton");
@@ -52,7 +53,7 @@ btn_again.addEventListener("click", play_again);
 
 
 function moveUp() {
-    gravity = -7;
+    gravity = -5;
 
     setTimeout(function() {
         gravity = gravity_backup;
