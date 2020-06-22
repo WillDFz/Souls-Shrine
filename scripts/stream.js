@@ -1,26 +1,21 @@
 var live_stream = "http://cassini.shoutca.st:10090/;";
 var myaudio = new Audio(live_stream);
 var play_button = document.getElementById("play-button");
-//var volume_control = document.getElementById("volume_bar");
 var cont = 3;
 document.getElementById('volumeUp').addEventListener("click", upVolume);
 document.getElementById('volumeDown').addEventListener("click", lowVolume);
 
-function PlayAudio() {
+window.addEventListener("load", setInitialVolume);
+
+function PlayAudio(button) {
     if (myaudio.paused || myaudio.muted) {
-        myaudio.setAttribute('src', live_stream)
-        myaudio.play()
+        myaudio.setAttribute('src', live_stream);
+        button.innerHTML = "Stop";
+        myaudio.play();
     } else {
         myaudio.pause();
-        myaudio.setAttribute('src', "")
-    }
-}
-
-function toggleButton(t) {
-    if (myaudio.paused || myaudio.muted) {
-        t.innerHTML = "Play"
-    } else {
-        t.innerHTML = "Stop"
+        myaudio.setAttribute('src', "");
+        button.innerHTML = "Play";
     }
 }
 
@@ -55,7 +50,7 @@ function lowVolume() {
         setVolume();
     }
 }
-setInterval(function rld() {
+setInterval(function reloadArtwork() {
     var d = new Date();
     document.getElementById("artwork").src = "http://cyberesistance.xyz/media/cover/artwork.png?a=" + d.getTime()
 }, 40000)

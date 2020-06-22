@@ -16,31 +16,40 @@ var isDevice = /android|webos|iphone|ipad|ipod|blackberry/i.test(
   navigator.userAgent.toLowerCase()
 );
 
+
+
+
+
 ////// ONLOAD //////
 var mySVGHP = document.getElementById("hp");
 var mySVGMP = document.getElementById("mana");
 
+window.addEventListener("load", iniciarAnimacoes);
+window.addEventListener("resize", iniciarAnimacoes);
+
 function iniciarAnimacoes() {
-  if (screen.availWidth <= 768) {
+  if (window.innerWidth < 768) {
     mySVGHP.setAttribute("viewBox", "0 0 125 450");
     mySVGMP.setAttribute("viewBox", "0 0 125 450");
-  } else if (screen.availWidth >= 768) {
+  } else if (window.innerWidth >= 768) {
     mySVGHP.setAttribute("viewBox", "0 0 600 450");
     mySVGMP.setAttribute("viewBox", "0 0 600 450");
   }
 }
 
+
+
 var mainTimeline = new TimelineMax();
 
 /// Movimento HP
 var frontLiquidTimelineHP = new TimelineMax({ repeat: -1 });
-frontLiquidTimelineHP.to(liquidFrontHP, 2.7, {
+frontLiquidTimelineHP.to(liquidFrontHP, 2.5, {
   x: -600,
   ease: Linear.easeNone,
 });
 
 var backLiquidTimelineHP = new TimelineMax({ repeat: -1 });
-backLiquidTimelineHP.from(liquidBackHP, 2, {
+backLiquidTimelineHP.from(liquidBackHP, 2.5, {
   x: -600,
   ease: Linear.easeNone,
 });
@@ -48,7 +57,7 @@ backLiquidTimelineHP.from(liquidBackHP, 2, {
 /// Movimento MP
 
 var frontLiquidTimelineMP = new TimelineMax({ repeat: -1 });
-frontLiquidTimelineMP.to(liquidFrontMP, 2.3, {
+frontLiquidTimelineMP.to(liquidFrontMP, 3, {
   x: -600,
   ease: Linear.easeNone,
 });
@@ -60,7 +69,6 @@ backLiquidTimelineMP.from(liquidBackMP, 2, {
 });
 
 TweenMax.set("svg", {
-  transformOrigin: "100% 100% 0px",
-  //:180,
+  transformOrigin: "50% 50% 0px",
   scale: 1,
 });
